@@ -39,6 +39,11 @@ input{
     border: 1px solid #ccc;
 }
 
+.content a{
+    text-decoration: none;
+    color: #747474;
+}
+
 .text-login, .text-cadastro{
     width: 45%;
     padding: 30px;
@@ -68,4 +73,8 @@ button{
 
 button:hover{
     background-color: #242424;
+}
+
+.content a:hover{
+    color: #242424;
 }

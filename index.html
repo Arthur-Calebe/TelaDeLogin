@@ -11,6 +11,12 @@
         <!-- Tela de login -->
         <div class="text-login" id="text-login">
             <h1>Login</h1>
+            <div class="social-login" id="social-login">
+                   <p>Logar com :</p>
+                    <a href="#" class="social-icon"><img src="img/pesquisa.png" alt="Google"></a>
+                    <a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="img/github (2).png" alt="GitHub"></a>
+            </div>
             <form>
                 <label for="username">Nome de Usuário:</label>
                 <input type="text" id="username" name="username" required>
@@ -18,13 +24,10 @@
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required>
                 <br>
-                <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+                <p>Esqueceu sua senha? <a href="#">Esqueci minha senha</a></p>
+                <p>Não possui uma conta? <a href="#" onclick="mostrarCadastro()">Cadastrar-se</a></p>
 
-                <div class="social-login" id="social-login">
-                   <p>Logar com :</p>
-                    <a href="#" class="social-icon"><img src="img/pesquisa.png" alt="Google"></a>
-                    <a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
-                </div>
+                
                 <button type="submit">Entrar</button>
             </form>
         </div>
@@ -43,7 +46,7 @@
                 <label for="new-password">Senha:</label>
                 <input type="password" id="new-password" name="new-password" required>
                 <br>
-                <br>
+                <p>Já possui uma conta? <a href="#" onclick="mostrarLogin()">Fazer login</a></p>
                 <button type="submit">Registrar</button>
             </form>
         </div>
