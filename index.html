@@ -11,6 +11,8 @@
         <!-- Tela de login -->
         <div class="text-login" id="text-login">
             <h1>Tela de Login</h1>
+            
+                
             <form>
                 <label for="username">Nome de Usuário:</label>
                 <input type="text" id="username" name="username" required>
@@ -19,6 +21,12 @@
                 <input type="password" id="password" name="password" required>
                 <br>
                 <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+
+                <div class="social-login" id="social-login">
+                   <p>Logar com :</p>
+                    <a href="#" class="social-icon"><img src="img/pesquisa.png" alt="Google"></a>
+                    <a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
+                </div>
                 <button type="submit">Entrar</button>
             </form>
         </div>
@@ -30,8 +38,13 @@
                 <label for="new-username">Nome de Usuário:</label>
                 <input type="text" id="new-username" name="new-username" required>
                 <br>
+                <label for="new-email">Email:
+                <input type="email" id="new-email" name="new-email" required>
+                </label>
+                <br>
                 <label for="new-password">Senha:</label>
                 <input type="password" id="new-password" name="new-password" required>
+                <br>
                 <br>
                 <button type="submit">Registrar</button>
             </form>
