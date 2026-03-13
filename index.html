@@ -24,8 +24,8 @@
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required>
                 <br>
-                <p>Esqueceu sua senha? <a href="#">Esqueci minha senha</a></p>
-                <p>Não possui uma conta? <a href="#" onclick="mostrarCadastro()">Cadastrar-se</a></p>
+                <p>Esqueceu sua senha? <a href="javascript:void(0)" onclick="mostrarEsqueciSenha()" >Esqueci minha senha</a></p>
+                <p>Não possui uma conta? <a onclick="mostrarCadastro()" style="cursor: pointer;">Cadastrar-se</a></p>
 
                 
                 <button type="submit">Entrar</button>
@@ -46,12 +46,24 @@
                 <label for="new-password">Senha:</label>
                 <input type="password" id="new-password" name="new-password" required>
                 <br>
-                <p>Já possui uma conta? <a href="#" onclick="mostrarLogin()">Fazer login</a></p>
+                <p>Já possui uma conta? <a onclick="mostrarLogin()" style="cursor: pointer;">Fazer login</a></p>
                 <button type="submit">Registrar</button>
             </form>
         </div>
-
+        <div class="overlay" id="overlay"></div>
     </div>
-</div>
+    
+
+    <script>
+
+function mostrarCadastro(){
+    document.getElementById("overlay").classList.add("mover");
+}
+
+function mostrarLogin(){
+    document.getElementById("overlay").classList.remove("mover");
+}
+
+</script>
 </body>
 </html>
